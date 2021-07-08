@@ -79,6 +79,6 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			s.ChannelMessageSend(m.ChannelID, fmt.Sprintf("There was an error: %s", err.Error()))
 			return
 		}
-		s.ChannelMessageSend(m.ChannelID, fmt.Sprintf("Average BTC Price in the last 5 MinutesL: %s", price))
+		s.ChannelMessageSend(m.ChannelID, fmt.Sprintf("Average BTC Price in the last 5 Minutes: %s", price))
 	}
 }
